@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,7 @@
   <style>
     :root {
       color-scheme: dark;
-      font-family: Segoe UI, Arial, sans-serif;
+      font-family: "Segoe UI", "Malgun Gothic", Arial, sans-serif;
       background: #111;
       color: #eee;
     }
@@ -17,9 +17,14 @@
       background: #111;
     }
     h1 {
-      margin: 0 0 16px;
+      margin: 0 0 8px;
       font-size: 24px;
       font-weight: 650;
+    }
+    .summary {
+      margin: 0 0 18px;
+      color: #bbb;
+      font-size: 14px;
     }
     .grid {
       display: grid;
@@ -27,17 +32,17 @@
       gap: 16px;
       align-items: start;
     }
+    .card,
     .empty {
-      color: #aaa;
-      border: 1px dashed #444;
-      border-radius: 8px;
-      padding: 16px;
-    }
-    .card {
       border: 1px solid #333;
       background: #181818;
       border-radius: 8px;
       overflow: hidden;
+    }
+    .empty {
+      padding: 16px;
+      color: #aaa;
+      border-style: dashed;
     }
     .card img {
       display: block;
@@ -60,45 +65,36 @@
 </head>
 <body>
   <h1>차트 이미지 모음</h1>
+  <p class="summary">SQLite에 등록된 차트 이미지 기준으로 생성한 갤러리입니다.</p>
   <main class="grid">
     <article class="card">
-      <img src="assets/2026-05-25/kospi_daily_20260525_212424.png" alt="kospi daily chart">
+      <img src="assets/2026-05-28/enchem_daily_01.png" alt="enchem daily chart">
       <div class="meta">
-        <strong>kospi</strong>
+        <strong>enchem</strong>
         <span>daily</span>
-        <span>2026-05-25 21:24:24</span>
+        <span>2026-05-28 20:26:17</span>
+        <span>캡처 저장</span>
+        <span>231.3 KB</span>
       </div>
     </article>
     <article class="card">
-      <img src="assets/2026-05-25/kospi_daily_20260525_212730.png" alt="kospi daily chart">
+      <img src="assets/2026-05-28/enchem_weekly_01.png" alt="enchem weekly chart">
       <div class="meta">
-        <strong>kospi</strong>
-        <span>daily</span>
-        <span>2026-05-25 21:27:30</span>
+        <strong>enchem</strong>
+        <span>weekly</span>
+        <span>2026-05-28 20:18:56</span>
+        <span>캡처 저장</span>
+        <span>170.5 KB</span>
       </div>
     </article>
     <article class="card">
-      <img src="assets/2026-05-25/kospi_daily_20260525_232323.png" alt="kospi daily chart">
+      <img src="assets/2026-05-28/enchem_monthly_01.png" alt="enchem monthly chart">
       <div class="meta">
-        <strong>kospi</strong>
-        <span>daily</span>
-        <span>2026-05-25 23:23:23</span>
-      </div>
-    </article>
-    <article class="card">
-      <img src="assets/2026-05-25/kospi_daily_20260525_232745.png" alt="kospi daily chart">
-      <div class="meta">
-        <strong>kospi</strong>
-        <span>daily</span>
-        <span>2026-05-25 23:27:45</span>
-      </div>
-    </article>
-    <article class="card">
-      <img src="assets/2026-05-25/kospi_daily_20260525_234637.png" alt="kospi daily chart">
-      <div class="meta">
-        <strong>kospi</strong>
-        <span>daily</span>
-        <span>2026-05-25 23:46:37</span>
+        <strong>enchem</strong>
+        <span>monthly</span>
+        <span>2026-05-28 20:14:39</span>
+        <span>캡처 저장</span>
+        <span>141.6 KB</span>
       </div>
     </article>
     <article class="card">
@@ -107,16 +103,60 @@
         <strong>kospi</strong>
         <span>daily</span>
         <span>2026-05-25 23:47:18</span>
+        <span>기존 이미지</span>
+        <span>181.7 KB</span>
       </div>
     </article>
-<!-- CHART_CARDS -->
+    <article class="card">
+      <img src="assets/2026-05-25/kospi_daily_20260525_234637.png" alt="kospi daily chart">
+      <div class="meta">
+        <strong>kospi</strong>
+        <span>daily</span>
+        <span>2026-05-25 23:46:37</span>
+        <span>기존 이미지</span>
+        <span>162.3 KB</span>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/2026-05-25/kospi_daily_20260525_232745.png" alt="kospi daily chart">
+      <div class="meta">
+        <strong>kospi</strong>
+        <span>daily</span>
+        <span>2026-05-25 23:27:45</span>
+        <span>기존 이미지</span>
+        <span>162.6 KB</span>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/2026-05-25/kospi_daily_20260525_232323.png" alt="kospi daily chart">
+      <div class="meta">
+        <strong>kospi</strong>
+        <span>daily</span>
+        <span>2026-05-25 23:23:23</span>
+        <span>기존 이미지</span>
+        <span>160.5 KB</span>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/2026-05-25/kospi_daily_20260525_212730.png" alt="kospi daily chart">
+      <div class="meta">
+        <strong>kospi</strong>
+        <span>daily</span>
+        <span>2026-05-25 21:27:30</span>
+        <span>기존 이미지</span>
+        <span>60.0 KB</span>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/2026-05-25/kospi_daily_20260525_212424.png" alt="kospi daily chart">
+      <div class="meta">
+        <strong>kospi</strong>
+        <span>daily</span>
+        <span>2026-05-25 21:24:24</span>
+        <span>기존 이미지</span>
+        <span>234.1 KB</span>
+      </div>
+    </article>
   </main>
 </body>
 </html>
-
-
-
-
-
-
-
